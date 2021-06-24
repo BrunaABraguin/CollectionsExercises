@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 class Main {
   public static void main(String[] args) {
@@ -42,5 +41,11 @@ class Main {
     }
 
     System.out.println("Nova lista --> "+ newNomes);
+
+    Collections.sort(newNomes);
+
+    System.out.println("Nova lista ordenada --> "+ newNomes);
+
+    System.out.println("Lista vazia --> "+ newNomes.isEmpty());
   }
 }
