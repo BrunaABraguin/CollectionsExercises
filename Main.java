@@ -24,7 +24,23 @@ class Main {
 
     System.out.println("Remove posição 4 --> "+ nomes);
 
-  
+    nomes.remove("João");
 
+    System.out.println("Remove João --> "+ nomes);
+
+    System.out.println("Quantidade itens --> "+ nomes.size());
+
+    System.out.println("Contém Juliano --> "+ nomes.contains("Juliano"));
+
+    List<String> newNomes = new ArrayList<>();
+
+    newNomes.add("Ismael");
+    newNomes.add("Rodrigo");
+    
+    for(String nome: nomes){
+      newNomes.add(nome);
+    }
+
+    System.out.println("Nova lista --> "+ newNomes);
   }
 }
